@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/ico.png" />
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovación</title>
+    
+
+    <div id="reloj" class="reloj">00 : 00 : 00
+    </div>
+    <script>
+        function actual() {
+         fecha=new Date(); //Actualizar fecha.
+         hora=fecha.getHours(); //hora actual
+         minuto=fecha.getMinutes(); //minuto actual
+         segundo=fecha.getSeconds(); //segundo actual
+         if (hora<10) { //dos cifras para la hora
+            hora="0"+hora;
+            }
+         if (minuto<10) { //dos cifras para el minuto
+            minuto="0"+minuto;
+            }
+         if (segundo<10) { //dos cifras para el segundo
+            segundo="0"+segundo;
+            }
+         //ver en el recuadro del reloj:
+         mireloj = hora+" : "+minuto+" : "+segundo;	
+				 return mireloj; 
+         }
+function actualizar() { //función del temporizador
+   mihora=actual(); //recoger hora actual
+   mireloj=document.getElementById("reloj"); //buscar elemento reloj
+   mireloj.innerHTML=mihora; //incluir hora en elemento
+	 }
+setInterval(actualizar,1000); //iniciar temporizador
+    </script>
+    <div id="navegador">
+        <ul><font face="Arial Black">
+        <li><a href="Inicio.html">Principal</a></li>
+        <li><a href="tipos.html"> Tipos de Innovaciòn</a></li>
+        <li><a href="beneficios.html">Beneficios</a></li>
+        <li><a href="top.html">Top de Mejores Innovaciones</a></li>
+        </font></ul>
+        </div>
+        
+</head>
+<hr color="cyan" size="5">
+<hr color="cyan" size="3" width="500">
+<hr color="cyan" size="3" width="400">
+<body>
+
+
+    <h1>¿Qué es innovación tecnológica?</h1>
+    <div class="dos">
+        <br><br>
+        <p>
+            Una innovación tecnológica, tal y como se define en esta Encuesta, es un producto (bien o servicio) nuevo o sensiblemente mejorado introducido en el mercado (innovación de producto) o la introducción dentro del establecimiento de un proceso nuevo o sensiblemente mejorado (innovación de proceso). La innovación tecnológica se basa en los resultados de nuevos desarrollos tecnológicos, nuevas combinaciones de tecnologías existentes o en la utilización de otros conocimientos adquiridos por el establecimiento.
+        </p>
+<p>De una forma esquemática la innovación se traduce en los siguientes hechos:
+    <ul>
+        <li>Renovación y ampliación de la gama de productos y servicios,</li>
+        <li>Renovación y ampliación de los procesos productivos,</li>
+        <li>Cambios en la organización y en la gestión,</li>
+        <li>Cambios en las cualificaciones de los profesionales.</li>
+    </ul>
+</p>
+<p>Tres características de la innovación:
+    <ul>
+        <li>La innovación no está restringida a la creación de nuevos productos.</li>
+        <li>La innovación no está restringida a desarrollos tecnológicos.</li>
+        <li>La innovación no está restringida a ideas revolucionarias.</li>
+    </ul>
+</p>
+<p>
+    La innovación es el elemento clave que explica la competitividad. Porter (1990), afirmó: "La competitividad de una nación depende de la capacidad de su industria para innovar y mejorar. La empresa consigue ventaja competitiva mediante innovaciones"
+</p>
+<p>
+    La Innovación Tecnológica consiste en la implementación de ideas nuevas en una institución. Esta novedad puede tener que ver con la presentación de un nuevo producto o servicio en el mercado, pero también con las transformaciones tecnológicas internas que aparecen en nuevos modelos organizativos. Así, los cambios introducidos en el modo de producir, financiar o comercializar un producto o servicio también se consideran Innovación Tecnológica.
+</p>
+<p>
+    La Innovación Tecnológica genera importantes cambios en los mercados, poniendo a prueba la flexibilidad y capacidad de aprendizaje de una organización. Este tipo de disrupciones transforman además los recursos prioritarios para una industria o área de negocio y cambian el modo en que las empresas compiten entre sí.
+</p>
+<br>
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2LEz9CHbBgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br><br>
+
+    </div>
+
+<br><br><br>
+<div id="stop" class="boton-subir">
+    <a href="#top"><i class="fas fa-arrow-up"></i></a>
+</div>
+<script>
+    $(window).scroll(function() {
+ 
+ var position =$(this).scrollTop();
+ 
+
+ if (position > 300) {
+    $(".boton-subir").fadeIn('slow');
+  } else {
+  $(".boton-subir").fadeOut('slow');
+ }
+});
+</script>
+</body>
+<hr color="cyan" size="3" width="400">
+<hr color="cyan" size="3" width="500">
+<hr color="cyan" size="5" >
+
+
+
+<div id="navegador">
+    <ul><font face="Arial Black">
+        <li><a href="Inicio.html">Principal</a></li>
+        <li><a href="tipos.html">Tipos de Innovaciòn</a></li>
+        <li><a href="beneficios.html">Beneficios</a></li>
+        <li><a href="top.html">Top de Mejores Innovaciones</a></li>
+    </font></ul>
+    </div>
+<hr color="red" size="3">
+<footer>
+
+    
+
+    <div class="uno">
+        <div class="contenedor-redes-sociales">
+            <a class="facebook" href="https://www.facebook.com/medina.7796.345/" target="_blank">
+                <span class="circulo"><i class="fa fa-facebook"></i></span>
+                <span class="titulo">Facebook</span>
+                <span class="titulo-hover">Agregame</span>
+            </a>
+    
+           <a class="whatsapp" href="https://api.whatsapp.com/send?phone=529941132250" target="_blank">
+               <span class="circulo"><i class="fa fa-twitter"></i></span>
+               <span class="titulo">Whatsapp</span>
+               <span class="titulo-hover">Contactame</span>
+           </a>
+    
+           <a class="instagram" href="https://www.instagram.com/edie_medina03/?hl=es-la" target="_blank">
+               <span class="circulo"><i class="fa fa-google-plus"></i></span>
+               <span class="titulo">Instagram</span>
+               <span class="titulo-hover">Seguir</span>
+           </a>
+       </div>
+    </div>
+    
+    
+<h1>Denos su opnion</h1>
+    <form name="frmContacto" method="post" action="sendbymail.php">
+        <table width="500px">
+        <tr>
+        <td>
+        <label for="first_name">Nombre: *</label>
+        </td>
+        <td>
+        <input type="text" name="first_name" maxlength="50" size="25">
+        </td>
+        </tr>
+        <tr>
+        <td valign="top"">
+        <label for="last_name">Apellido: *</label>
+        </td>
+        <td>
+        <input type="text" name="last_name" maxlength="50" size="25">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label for="email">Dirección de E-mail: *</label>
+        </td>
+        <td>
+        <input type="text" name="email" maxlength="80" size="35">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label for="telephone">Número de teléfono:</label>
+        </td>
+        <td>
+        <input type="text" name="telephone" maxlength="25" size="15">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label for="comments">Comentarios: *</label>
+        </td>
+        <td>
+        <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2" style="text-align:right">
+        <center>
+            <input class="animated-fill-button" type="submit" value="Enviar">
+        </center>
+        </td>
+        </tr>
+        </table>
+        </form>
+        </table>
+
+        
+</footer>
+</html>

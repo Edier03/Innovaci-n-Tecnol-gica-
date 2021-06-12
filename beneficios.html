@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img/ico.png" />
+    <link rel="stylesheet" href="css/beneficios.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios</title>
+    <div id="reloj" class="reloj">00 : 00 : 00
+    </div>
+    <script>
+        function actual() {
+         fecha=new Date(); 
+         hora=fecha.getHours(); 
+         minuto=fecha.getMinutes(); 
+         segundo=fecha.getSeconds(); 
+         if (hora<10) { 
+            hora="0"+hora;
+            }
+         if (minuto<10) { 
+            minuto="0"+minuto;
+            }
+         if (segundo<10) { 
+            segundo="0"+segundo;
+            }
+         
+         mireloj = hora+" : "+minuto+" : "+segundo;	
+				 return mireloj; 
+         }
+function actualizar() { 
+   mihora=actual(); 
+   mireloj=document.getElementById("reloj"); 
+   mireloj.innerHTML=mihora; 
+	 }
+setInterval(actualizar,1000); 
+    </script>
+    <div id="navegador">
+        <ul><font face="Arial Black">
+        <li><a href="Inicio.html">Principal</a></li>
+        <li><a href="tipos.html">Tipos de Innovaciòn</a></li>
+        <li><a href="beneficos.html">Beneficios</a></li>
+        <li><a href="top.html">Top de Mejores Innovaciones</a></li>
+        </font></ul>
+        </div>
+</head>
+<hr color="cyan" size="5">
+<hr color="cyan" size="3" width="500">
+<hr color="cyan" size="3" width="400">
+<body>
+    <h1>¿Cuáles son los beneficios de aplicar la innovación tecnológica?</h1>
+    <div class="dos">
+        <br>
+        <p>Los costes de acceder a la Cuarta Revolución Industrial son innegables: desde la necesidad de impulsar un plan de formación de empleados hasta los costes económicos de adquirir e implementar nueva tecnología.</p>
+        <br><br>
+        <p1>Aumenta la eficiencia. </p1>
+        <p>Las empresas operan mejor cuando usan la tecnología correctamente. Digitalizar los archivos facilita la personalización de documentos. Gracias al uso de aplicaciones colectivas, de la nube o los chats la comunicación se hace instantánea, fluida y la toma de decisiones es más eficaz.
+            De cara al cliente, el uso de Software para recopilar e interpretar datos de consumo es vital y muy utilizado en la industria retail. Esta información –datos del cliente, seguimiento, historial de compras, patrones, etc- hace que la empresa se adelante en ofrecer al cliente lo que él espera. Todo permitirá a la empresa establecer ventajas competitivas con las que podrán posicionarse en el mercado, conseguir mejores clientes y lograr mayor productividad y expansión.</p>
+            <br><center><img src="img/b1.jpg" alt=""></center>
+            <br><br>
+        <p1>Expande el mercado.</p1>
+        <p>La innovación tecnológica puede ayudar a pequeñas y medianas empresas a competir en un escenario global. Por ejemplo, la página web, las aplicaciones y el e-Commerce permiten que un único propietario ofrezca sus productos y servicios a clientes potenciales de todo el mundo mediante estas herramientas. Lo mismo sucede con las redes sociales que, además, nos permite conseguir un feedback instantáneo de los consumidores.</p>
+        <br><center><img src="img/b2.jpg" alt=""></center>
+        <br><br>
+        <p1>Mejora la productividad</p1>
+        <p>Con la tecnología podemos automatizar los procesos financieros, comerciales y de recursos humanos de la empresa, con la cual se reduce el trabajo manual y las horas hombre hasta en un 50%, y se aumenta la productividad de los trabajadores. Opciones tecnológicas como los Software ERP, nos permiten llevar un control adecuado de las operaciones de la organización en tiempo real, hacer seguimiento y tomar decisiones más inteligentes.</p>
+        <br><center><img src="img/b3.jpg" alt=""></center>
+        <br><br>
+        <p1>Elimina las barreras de comunicación.</p1>
+        <p>Un respaldo tecnológico nos asegura una mejor comunicación. En vez de realizar una simple llamada la tecnología nos provee otras herramientas como correo electrónico, redes sociales, video llamadas y boletines de noticias con los cuales será posible mantener contacto con todos los miembros de la empresa. Es también útil para mejorar la comunicación con proveedores, clientes y/o aliados comerciales.</p>
+        <br> <center><img src="img/b4.jpg" alt=""></center>
+        <br><br>
+    </div>
+<br><br><br>
+	
+</body>
+<hr color="cyan" size="3" width="400">
+<hr color="cyan" size="3" width="500">
+<hr color="cyan" size="5" >
+<div id="navegador">
+    <ul><font face="Arial Black">
+        <li><a href="Inicio.html">Principal</a></li>
+        <li><a href="tipos.html">Tipos de Innovaciòn</a></li>
+        <li><a href="beneficios.html">Beneficios</a></li>
+        <li><a href="top.html">Top de Mejores Innovaciones</a></li>
+    </font></ul>
+    </div>
+<hr color="red" size="3">
+<footer>
+    <div class="uno">
+        <div class="contenedor-redes-sociales">
+            <a class="facebook" href="https://www.facebook.com/medina.7796.345/" target="_blank">
+                <span class="circulo"><i class="fa fa-facebook"></i></span>
+                <span class="titulo">Facebook</span>
+                <span class="titulo-hover">Agregame</span>
+            </a>
+    
+           <a class="whatsapp" href="https://api.whatsapp.com/send?phone=529941132250" target="_blank">
+               <span class="circulo"><i class="fa fa-twitter"></i></span>
+               <span class="titulo">Whatsapp</span>
+               <span class="titulo-hover">Contactame</span>
+           </a>
+    
+           <a class="instagram" href="https://www.instagram.com/edie_medina03/?hl=es-la" target="_blank">
+               <span class="circulo"><i class="fa fa-google-plus"></i></span>
+               <span class="titulo">Instagram</span>
+               <span class="titulo-hover">Seguir</span>
+           </a>
+       </div>
+    </div>
+    
+</footer>
+</html>

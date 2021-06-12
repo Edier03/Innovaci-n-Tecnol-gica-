@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img/ico.png" />
+    <link rel="stylesheet" href="css/tipos.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de innovaciones</title>
+    <div id="reloj" class="reloj">00 : 00 : 00
+    </div>
+    <script>
+        function actual() {
+         fecha=new Date(); //Actualizar fecha.
+         hora=fecha.getHours(); //hora actual
+         minuto=fecha.getMinutes(); //minuto actual
+         segundo=fecha.getSeconds(); //segundo actual
+         if (hora<10) { //dos cifras para la hora
+            hora="0"+hora;
+            }
+         if (minuto<10) { //dos cifras para el minuto
+            minuto="0"+minuto;
+            }
+         if (segundo<10) { //dos cifras para el segundo
+            segundo="0"+segundo;
+            }
+         //ver en el recuadro del reloj:
+         mireloj = hora+" : "+minuto+" : "+segundo;	
+				 return mireloj; 
+         }
+function actualizar() { //función del temporizador
+   mihora=actual(); //recoger hora actual
+   mireloj=document.getElementById("reloj"); //buscar elemento reloj
+   mireloj.innerHTML=mihora; //incluir hora en elemento
+	 }
+setInterval(actualizar,1000); //iniciar temporizador
+    </script>
+    <div id="navegador">
+        <ul><font face="Arial Black">
+        <li><a href="Inicio.html">Principal</a></li>
+        <li><a href="tipos.html">Tipos de Innovaciòn</a></li>
+        <li><a href="beneficios.html">Beneficios</a></li>
+        <li><a href="top.html">Top de Mejores Innovaciones</a></li>
+        </font></ul>
+        </div>
+</head>
+<hr color="cyan" size="5">
+<hr color="cyan" size="3" width="500">
+<hr color="cyan" size="3" width="400">
+<body>
+    <h1>Tipos de Innovaciòn</h1>
+    <div class="dos">
+        <br>
+        <p1>Progresiva o de sostenido</p1>
+        <p>
+            La mayoría de los casos de Innovación Tecnológica tiene que ver con un cambio progresivo y continuado en el tiempo. Así, productos, servicios o procesos internos van adaptándose a las mejoras tecnológicas que aparecen en el mercado. 
+        </p>
+        <p>
+            Este tipo de innovación no genera nuevos mercados, pero es menos arriesgado: los consumidores ya conocen el producto, y se les ofrece uno que mejora la versión que ya conocían; o se les ofrece mediante canales o procesos diferentes. Además, los trabajadores deben variar mínimamente sus procesos, con la promesa de mejorar su eficacia.
+        </p>
+        <p>
+            Dentro de este tipo de Innovación Tecnológica se incluyen acciones como implementar una estrategia de Presencia Digital o abrir nuevos canales de venta online.
+        </p>
+        <br>
+        <p1>Disruptiva </p1>
+        <p>
+            La Innovación Tecnológica disruptiva se refiere a un cambio exhaustivo en la tecnología, generando nuevos valores, transformando un mercado por completo o creando uno nuevo. Consiste así en generar modelos de negocio en los que se ataca a nuevas posibles fuentes de ingresos. Este concepto fue introducido en la publicación Harvard Business Review por Joseph L. Bower y Clayton M. Christensen en 1995. 
+        </p>
+        <p>
+            Se trata de una innovación que, en un principio, atrae a un nicho de clientes o empresas innovadoras, sin llegar a los segmentos más convencionales. En este caso, el riesgo de adoptar esta innovación es más alto, ya que al principio el mercado ya existente es mayor. No obstante, aplicar la innovación disruptiva también implica que los márgenes de beneficio serán mayores, en caso de que sea aceptada. 
+        </p>
+        <br>
+        <p1>Radical</p1>
+        <p>
+            Una Innovación Tecnológica radical genera tanto nuevos modelos de negocio como tecnologías novedosas, creando a su vez nuevas soluciones e incluso nuevas necesidades. Un ejemplo de este tipo de transformación disruptiva es la llegada del ordenador personal a los mercados. En la actualidad, las aplicaciones de Inteligencia Artificial o Deep Learning son consideradas las tecnologías que traerán innovaciones radicales a los mercados, generando nuevos modelos de negocio, productos y servicios. 
+        </p>
+        <p>
+            Además, este tipo de Innovación Tecnológica se caracteriza por generar una base desde la cual aparecen otras innovaciones. De este modo, son plataformas que aceleran el crecimiento económico global. 
+        </p>
+        <br>
+    </div>
+<br><br><br>
+	
+</body>
+<hr color="cyan" size="3" width="400">
+<hr color="cyan" size="3" width="500">
+<hr color="cyan" size="5" >
+<div id="navegador">
+    <ul><font face="Arial Black">
+        <li><a href="Inicio.html">Principal</a></li>
+        <li><a href="tipos.html">Tipos de Innovaciòn</a></li>
+        <li><a href="beneficios.html">Beneficios</a></li>
+        <li><a href="top.html">Top de Mejores Innovaciones</a></li>
+    </font></ul>
+    </div>
+<hr color="red" size="3">
+<footer>
+    <div class="uno">
+        <div class="contenedor-redes-sociales">
+            <a class="facebook" href="https://www.facebook.com/medina.7796.345/" target="_blank">
+                <span class="circulo"><i class="fa fa-facebook"></i></span>
+                <span class="titulo">Facebook</span>
+                <span class="titulo-hover">Agregame</span>
+            </a>
+    
+           <a class="whatsapp" href="https://api.whatsapp.com/send?phone=529941132250" target="_blank">
+               <span class="circulo"><i class="fa fa-twitter"></i></span>
+               <span class="titulo">Whatsapp</span>
+               <span class="titulo-hover">Contactame</span>
+           </a>
+    
+           <a class="instagram" href="https://www.instagram.com/edie_medina03/?hl=es-la" target="_blank">
+               <span class="circulo"><i class="fa fa-google-plus"></i></span>
+               <span class="titulo">Instagram</span>
+               <span class="titulo-hover">Seguir</span>
+           </a>
+       </div>
+    </div>
+    
+</footer>
+</html>
